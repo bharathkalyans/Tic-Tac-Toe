@@ -70,6 +70,7 @@ public class Main {
 			List<Integer> cross1= Arrays.asList(1,5,9);
 			List<Integer> cross2= Arrays.asList(3,5,7);
 
+			//PreProcessing reduces our Time Complexity issues.
 			List<List> winning=new ArrayList<List>();
 			winning.add(topRow);
 			winning.add(botRow);
