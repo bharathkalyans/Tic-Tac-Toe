@@ -24,6 +24,10 @@ public class Main {
 				//Player's Snippet
 				System.out.println("Enter the Position b/w(1-9)");
 				int playerPosition=scan.nextInt();
+				while( playerPosition<0 || playerPosition>10){
+					System.out.println("Please Enter b/w (1-9)");
+					playerPosition=scan.nextInt();
+				}
 				while (playerPositions.contains(playerPosition)|| cpuPositions.contains(playerPosition)){
 					System.out.println("Position Taken!!, Enter a different Position");
 					playerPosition=scan.nextInt();
